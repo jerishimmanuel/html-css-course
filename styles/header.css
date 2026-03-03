@@ -8,6 +8,7 @@
     top: 0;
     right: 0;
     left: 0;
+    z-index: 100;
 
     background-color: white;
     border-width:1px ;
@@ -50,7 +51,7 @@
     width: 0;
 }
 
-.search-bar:::placeholder{
+.search-bar::placeholder{
     font-family: Roboto,Arial;
     font-size: 16px;
 }
@@ -103,6 +104,22 @@
 
 .notifications-icon{
     height: 24px;
+}
+
+.notifications-icon-container{
+    position: relative;
+}
+
+.notifications-count{
+    font-family: Roboto,Arial;
+    font-size: 12px;
+    padding: 2px 5px;
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background-color: rgb(199, 0, 0);
+    color: white;
+    border-radius: 10px;
 }
 
 .current-user-picture{
